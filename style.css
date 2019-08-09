@@ -21,7 +21,6 @@
 .wrapper{
     max-width: 1520px;
     margin: 0 auto;
-    
 }
 p{
     
@@ -31,13 +30,15 @@ p{
     /* header */
 
 #header{
-    padding: 15px 0 10px;
-    display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    padding: 15px 0 24px;
+    margin-bottom: 27px;
 }
-
+.header-burger, .header-logo{
+    float: left;
+}
+.header-contact, .header-arrow{
+    float: right;
+}
 .header-burger{
     padding-left: 162px;
     margin-top: 15px;
@@ -71,7 +72,7 @@ p{
     text-align: center;
     height: 38px;
     line-height: 38px;
-    width: 220px;
+    width: 218px;
     border-radius: 3px;
     font-family: PFAgoraSansPro-Light;
     box-sizing: border-box;
@@ -88,22 +89,27 @@ u {
       width: 35px;
       height: 30px;
       margin-left: 58px;
+      margin-right: 157px;
   }
   
     /* section home-slider */
-    .home-slider p{
-        margin: 0;
-    }
+.home-slider p{
+    margin: 0;
+}
 
+.home-slider .wrapper {
+    background: url(img/main-slide.jpg) no-repeat center center;
+    padding-bottom: 255px;
+}
 .home-slider{
     clear: both;
-    height: 550px;
-    background: url(img/main-slide.jpg) no-repeat center center;
+    
+    background-color: #f3f0e7;
     margin-bottom: 50px;
 }
 
 .slide-title{
-    font-size: 40px;
+    font-size: 38px;
     font-family: PFAgoraSansPro-XThin;
     letter-spacing: 2.8px;
     text-align: center;
@@ -130,6 +136,7 @@ u {
     margin-left: auto;
     margin-right: auto;
     margin-top: 70px;
+    
 }
 
 .button-make-book{
@@ -140,34 +147,37 @@ u {
     color: #212121;
     text-transform: uppercase;
     font-family: PFAgoraSansPro-Thin;
+    
 }
 
 
     /* section home-instruments */
-    .home-instruments .wrapper{ 
-  font-size: 0px;
-  position: relative;
-}
+    
+    
 
-
+ .home-instruments div{
+     float: left;
+    
+ }
     .home-instrument {
-        display: inline-block;
-        width: 25%;
+        
+        width: 9.2%;
         text-align: center;
         font-size: 16px;
     }
     
     
-    .home-instrument:not(:last-child):after {
-      content: "";
-      position: absolute;
-      border-bottom: 1px dashed yellow;
-      width: 16%;
-      top: 37%;
-      margin-left: 5%;
-      z-index: -1;
-      overflow: hidden;
+    .home-instruments-line {
+      
+    
+      border-bottom: 3px dashed #ffd200;
+      width: 8.8%;
+     
+    
     }
+.home-slider::after{
+    content: '';
+}
     
     
 .home-instruments img{
@@ -184,13 +194,14 @@ u {
     /* section home-news*/
    
 .home-news{
-    height: 818px;
+   clear: both;
     background-color: #f3f0e7;
     text-align: center;
+    padding-bottom: 110px;
     
 }
 .home-news-title{
-    font-size: 60px;
+    font-size: 38px;
     font-family: PFAgoraSansPro-XThin;
     letter-spacing: 2.8px;
     text-align: center;
@@ -226,6 +237,7 @@ u {
     background-color: #e11a27;
     border: 1px solid #e11a27;
     margin-top: 75px;
+   
     
 
 }
@@ -248,9 +260,12 @@ u {
     justify-content: center; 
 }
 .home-solutions-title{
-    font-size: 60px;
+    font-size: 38px;
     font-family: PFAgoraSansPro-XThin;
     text-align: center;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    padding-bottom: 40px;
 }
 
 .home-solutions-item{
@@ -262,21 +277,25 @@ u {
     border-top: 1px solid #ffd200;
     border-bottom: 2px solid #ffd200;
     border-radius: 10px;
+    margin-bottom: 75px;
     
 }
 
 .home-solutions-second-bestseller{
-    font-size: 20.76px;
+    font-size: 14px;
     font-family: PFAgoraSansPro-Bold;
     text-transform: uppercase;
     color: #e11a27;
-    text-align: center;
     width: 192px;
     background: #ffd200;
     height: 27px;
     margin-top: -27px;
     margin-left: 55px;
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); 
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
 }
 
 .home-solutions-first-title, .home-solutions-second-title, .home-solutions-third-title{
@@ -325,29 +344,44 @@ u {
 
 
 /* section home-testimonials*/
-.home-testimonials{
-    padding-left: 180px;
-    height: 770px;
+.home-testimonials p{
+    margin: 0;
+}
+.home-testimonials .wrapper {
+    padding-bottom: 90px;
     background: url(img/slide-2.jpg) no-repeat center center;
 }
+.home-testimonials{
+    padding-left: 12.5%;
+    background-color: #f3f0e7;
+   
+    
+}
 .home-testimonials-title{
-    font-size: 60px;
+    font-size: 38px;
     font-family: PFAgoraSansPro-XThin;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    padding-top: 38px;
     
 }
 .home-testimonials-photogragher{
     background: url(img/foto-john.png) no-repeat left center;
     height: 160px;
     padding-left: 191px;
-    padding-top: 50px;
+    padding-top: 20px;
+
 }
 .home-testimonials-photogragher-name{
     font-size: 30px;
     font-family: PFAgoraSansPro-Light;
+    padding: 35px 0 10px 0;
+    
 }
 .home-testimonials-photogragher-descr{
     font-size: 18px;
     font-family: PFAgoraSansPro-Light;
+    
 }
 
 .home-testimonials-descr{
@@ -360,6 +394,13 @@ u {
     margin-left: 80px;
     margin-top: 115px;
     
+}
+
+.home-testimonials-next{
+ font-family: PFAgoraSansPro-XThin;
+ background: url(img/icon-next.png) no-repeat right center;
+ text-align: right;
+ padding-right: 40px;
 }
 
 /* section home-information*/
@@ -485,3 +526,85 @@ hr {
      font-family: PFAgoraSansPro-Regular;
      padding-top: 30px;
  }
+
+ @media (max-width: 1095px){
+    .home-solutions-item {
+        float: none;
+        margin-bottom: 35px;
+        }
+        .home-solutions-item:not(:last-child){
+            margin-right: 0;
+        }
+    .home-solutions-title{
+        padding-bottom: 0;
+
+    }
+    .home-information-item {
+        float: none;
+        padding-bottom: 15px;
+        
+    }
+    .home-information-item:first-child{
+        margin-right: 0;
+    }
+    .home-information-item:nth-child(2){
+        margin-right: 0;
+    }
+    .button-make-book__color{
+        margin-top: 15px;
+    }
+    .make-book{
+        width: 230px;
+    }
+    .button-make-book{
+        font-size: 18px;
+    }
+    #footer p{
+        margin: 0;
+    }
+    .footer-col-fourth{
+        margin-left: 20px;
+    }
+    #footer{
+        float: none;
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+    
+
+
+
+ @media (max-width: 1009px){
+     .home-news{
+         display: block;
+         padding-bottom: 15px;
+         }
+    .home-news-item{
+        float: none;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0;
+    }
+    .home-news-title{
+        padding-top: 15px;
+    }
+     }
+
+
+@media (max-width: 903px){
+    .header-burger{
+      padding-left: 15px;
+        
+    }
+.header-arrow{
+    margin-right: 15px;
+    margin-left: 20px;
+}
+.header-logo{
+padding-left: 20px;
+}
+}
